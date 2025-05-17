@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des chevaux et cavaliers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestion des chevaux et cavaliers</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Tableau de bord</a></li>
+                <li><a href="#attribution">Attribution des chevaux</a></li>
+                <li><a href="#cavaliers">Liste des cavaliers</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <h2>Tableau de bord</h2>
+            <p>Bienvenue sur votre espace de gestion.</p>
+        </section>
+
+        <section id="attribution">
+            <h2>Attribution des chevaux</h2>
+            <form id="attributionForm">
+                <label for="cavalier">Cavalier :</label>
+                <input type="text" id="cavalier" name="cavalier">
+
+                <label for="cheval">Cheval :</label>
+                <input type="text" id="cheval" name="cheval">
+
+                <button type="submit">Attribuer</button>
+            </form>
+        </section>
+
+        <section id="cavaliers">
+            <h2>Liste des cavaliers</h2>
+            <ul id="cavalierList"></ul>
+        </section>
+
+        <section id="notifications">
+            <h2>Notifications</h2>
+            <p>Recevez des informations en temps réel.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
